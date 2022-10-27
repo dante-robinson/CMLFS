@@ -41,5 +41,5 @@ for p in 0001-posix_memalign.patch \
         0040-configure-Add-enable-autolink-libatomic-use-in-LINK_.patch \
         0041-Use-generic-errstr.go-implementation-on-musl.patch 
 do
-	patch -Np1 -i ../patches/gcc-10.3.1_git20210424-alpine/$p
+	patch -Np1 -i ../../patches/gcc-10.3.1_git20210424-alpine/$p
 done
