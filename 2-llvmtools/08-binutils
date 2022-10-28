@@ -7,6 +7,9 @@
 #esac
 # ^ looks like binutils doesnt create a lib64 directory
 
+# Remove old build directory
+rm -rf build
+
 # Configure in dedicated build directory
 mkdir -v build && cd build
 
