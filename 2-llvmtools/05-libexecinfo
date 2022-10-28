@@ -1,9 +1,9 @@
 # llvmtools: libexecinfo
 
 # Patch source to fix broken build system
-patch -Np1 -i ../patches/libexecinfo-alpine/10-execinfo.patch
-patch -Np1 -i ../patches/libexecinfo-alpine/20-define-gnu-source.patch
-patch -Np1 -i ../patches/libexecinfo-alpine/30-linux-makefile.patch
+patch -Np1 -i ../../patches/libexecinfo-alpine/10-execinfo.patch
+patch -Np1 -i ../../patches/libexecinfo-alpine/20-define-gnu-source.patch
+patch -Np1 -i ../../patches/libexecinfo-alpine/30-linux-makefile.patch
 
 # Build
 CC=$CC CXX=$CXX CFLAGS=" -fno-omit-frame-pointer" make
