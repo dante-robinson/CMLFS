@@ -11,7 +11,7 @@ RANLIB=llvm-ranlib \
 LD=ld.lld \
 STRIP=llvm-strip \
 ./configure --prefix=/llvmtools \
-            --build=${MLFS_HOST} \
+            --build=${TARGET_TRUPLE} \
             --host=${TARGET_TRUPLE} 
 
 # Build and install to toolchain
