@@ -4,7 +4,7 @@
 # This section is done in Chroot environment
 
 # Kernel version greater than 5.9.16 will not compile under musl 
-patch -Np1 -i ../patches/kernel/include-uapi-linux-swab-Fix-potentially-missing-__always_inline.patch
+patch -Np1 -i ../../patches/kernel/include-uapi-linux-swab-Fix-potentially-missing-__always_inline.patch
 
 # Clean source tree
 LLVM=1 LLVM_IAS=1 make CC=x86_64-pc-linux-musl-clang mrproper
